@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<input type="text" id="searchBox" placeholder="Search..." />-->
+<!--<button>Search</button>-->
+<!--<button onclick ="clearInput()">Clear</button>-->
+<!--<p id="count"></p>-->
+<!--<button onclick="clickCount()">Click</button>-->
+<input type="text" id="name" placeholder="Enter your name" />
+<button onclick="sayHi()">Say Hi!</button>
+</body>
+<script type="text/javascript">
+    // var count = 0;
+    // var counter = document.getElementById('count');
+    // counter.innerHTML = count;
+    // // Tạo 1 button mới nằm dưới p
+    // // Viết code sao cho khi click button đó thì giá trị biến `count` tăng 1 đơn vị và nội dung của `counter` cũng thay đổi theo`
+    // function clickCount(){
+    //     count++;
+    //     counter.innerHTML = count;
+    // }
+    // console.log(clickCount());
+    function sayHi(){
+        var input = document.getElementById('name');
+        alert("Hi "+input.value);
+    }
+</script>
+</html>

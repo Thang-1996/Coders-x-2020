@@ -1,0 +1,19 @@
+/*CSS 2D transform*
+-translate : dịch chuyển vị trí đến 1 tọa độ bất kỳ
+-rotate : xuay element
+-scale : phóng to thu nhỏ
+-skew : biến dạng méo theo trục x hoặc y
+-matrix
+ */
+/*-translate*/
+.item{
+    width: 100px;
+    height: 100px;
+    background-color: #DDD;
+    /*translate truyền vào 2 giá trị trục x và y sang phải hoặc trái và lên hoặc xuống*/
+    /*transform: translate(10px,20px);*/
+    /*scale phóng to hoặc thu nhỏ*/
+    /*transform: scale(0.5);*/
+    /*rorate truyền vào deg góc độ xuay*/
+    transform: rotate(30deg);
+}

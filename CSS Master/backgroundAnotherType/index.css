@@ -1,0 +1,35 @@
+.list-item{
+    color: white;
+    text-decoration: underline;
+    font-size: 30px;
+    padding: 10px 5px 10px 5px;
+    background-color: blue;
+    margin: 10px;
+    /*// cách thuộc tính khác của background*/
+}
+.list-item-pattern{
+    /*chèn vào 1 image*/
+    background-image: url(pattern.jpg);
+    /*background-size: 20%; để làm nhỏ kích thước của pattern*/
+    background-size: 30%;
+    /*mặc định là sẽ lặp đi lặp lại còn nếu không muốn lặp đi lặp lại sẽ dùng*/
+    /*!*background-repeat: no-repeat;*! có thể lặp lại theo trục*/
+    height: 100px;
+    background-repeat: repeat;
+}
+.list-item-image{
+    background-image: url(image.jpg);
+    height: 100px;
+    /*background-size: cover; ảnh sẽ được cover vừa với khung*/
+    background-size: cover;
+    /*thay đổi vị trí kéo của ảnh*/
+    /*background-position: center;*/
+    /*background-position: 0-220px; kéo theo trục x-y*/
+}
+.list-item-parallax{
+    background-image: url(image.jpg);
+    height: 100px;
+    background-size: cover;
+    /*background-attachment: fixed; background của div sẽ fix đứng yên với trình duyệt khi kéo xuống*/
+    background-attachment: fixed;
+}

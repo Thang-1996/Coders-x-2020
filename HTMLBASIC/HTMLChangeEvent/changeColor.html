@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="color" id="myInput"/>
+    <p id="p-text">this text line will change color reply on you</p>
+</body>
+    <script type="text/javascript">
+        var myInput = document.getElementById("myInput");
+
+        myInput.addEventListener('change',bindingColor);
+        function bindingColor() {
+            document.getElementById("p-text").style.color = myInput.value;
+        }
+    </script>
+</html>

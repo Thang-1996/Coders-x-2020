@@ -1,0 +1,50 @@
+<!-- change event -->
+<!--element support input select textarea-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<span>Age:</span>
+<select id="age-filter">
+    <option>20</option>
+    <option>21</option>
+    <option>22</option>
+    <option>23</option>
+</select>
+<table id="student-table">
+</table>
+</body>
+
+<script type="text/javascript">
+    var students = [
+        {name : 'thang',age : 20},
+        {name : 'thang1',age : 21},
+        {name : 'thang2',age : 22},
+        {name : 'thang3',age : 23},
+        {name : 'thang4',age : 24},
+    ];
+    var ageFilter = document.getElementById('age-filter');
+    ageFilter.addEventListener('change',onAgeFilterChange);
+    function onAgeFilterChange() {
+        // lấy giá trị hiện tại của select
+        var selectedAge = parseInt(ageFilter.value); // chuyển sang kiểu số
+        // filter studentlist theo tuổi
+        var filterStudent = students.filter(function (student) {
+                return student.age === selectedAge;
+        });
+        // render
+        render(filterStudent);
+    }
+    function render(students) {
+        var studentTable = document.getElementById('student-table');
+        var content = students.map(function (student) {
+            return '<tr><td>' +student.name+'</td><td>' +student.age +'</td></tr>';
+        });
+        studentTable.innerHTML = content.join('');
+    }
+    render(students);
+</script>
+</html>

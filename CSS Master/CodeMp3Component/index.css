@@ -1,0 +1,28 @@
+.weakly-item{
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #9999;
+}
+body{
+    font-family: Arial sans-serif;
+}
+.weakly-item .number{
+    font-size: 20px;
+    padding: 0 10px;
+}
+.weakly-item .info{
+    font-size: 16px;
+    text-transform: capitalize;
+    flex-grow: 1;
+}
+.weakly-item .song-title{
+    margin-bottom: 5px;
+}
+.weakly-item .singer-name{
+    font-size: 12px;
+    text-transform: capitalize;
+}
+.weakly-item .view-count{;
+    padding: 0 10px;
+}

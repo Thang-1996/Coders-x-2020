@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>todoList</title>
+</head>
+<body>
+    <ul id="todo-list">
+<!--        <li>Cooking</li>-->
+<!--        <li>take a shower</li>-->
+<!--        <li>goto bed</li>-->
+    </ul>
+</body>
+<script type="text/javascript">
+    var todoList = [
+        'Cooking',
+        'take a shower',
+        'gotobed'
+    ];
+    var todo = document.getElementById("todo-list");
+    var content = todoList.map(function (x) {
+        return '<li>'+x+'</li>';
+    });
+    // ghép các element lại bằng phương thức join của arraymethod
+    todo.innerHTML = content.join('');
+    console.log(content);
+</script>
+</html>

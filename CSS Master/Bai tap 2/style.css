@@ -1,0 +1,67 @@
+.body{
+    box-sizing: border-box;
+    font-family: Arial,sans-serif;
+}
+.container{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    background-color: #e1f3e8;
+    border-radius: 20px;
+    padding: 0 30px;
+}
+.content1{
+    display: flex;
+    border-bottom: 1px solid #cfccca;
+    padding: 40px 0;
+}
+.rocket-icon{
+    font-size: 60px;
+    padding: 20px;
+    background-color: #00c57a;
+    border-radius: 20px;
+    color: white;
+}
+.text{
+    flex-grow: 1;
+    padding-left: 20px;
+}
+.text h2
+.text p{
+    font-size: 18px;
+    color: #888888;
+}
+.content2{
+    display: flex;
+    border-bottom: 1px solid #cfccca;
+    align-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+.circle-icon{
+    font-size: 60px;
+    padding: 20px;
+    color: #00c57a;
+}
+.text-2{
+    /*flex-grow: 1;*/
+    font-size: 18px;
+    color: black;
+    padding-left: 20px;
+}
+.img-box{
+    display: flex;
+    flex-grow: 1;
+    align-content: center;
+    align-items: center;
+    padding-left: 80px;
+}
+.box{
+    width: 40px;
+    height: 40px;
+    background-image: url('https://photo-2-baomoi.zadn.vn/w1000_r1/2019_10_26_329_32706571/b88490543014d94a8005.jpg');
+    background-size: cover;
+    border-radius: 8px;
+    margin-right: 5px;
+}
+

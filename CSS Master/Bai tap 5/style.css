@@ -1,0 +1,95 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 500px;
+    border: 1px solid #cfccca;
+    border-radius: 5px;
+}
+.title{
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    align-content: center;
+    border-bottom: 1px solid #e7e9e1;
+}
+.text{
+    font-size: 22px;
+    font-family: Arial,sans-serif;
+    flex-grow: 1;
+    font-weight: bold;
+}
+.icon{
+    font-size: 40px;
+    font-weight: normal;
+}
+.box{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    padding: 15px;
+}
+.visa{
+    font-size: 70px;
+    padding: 10px;
+    color: blue;
+    border-radius: 20px;
+}
+.mastercard{
+    font-size: 70px;
+    padding: 10px;
+    color: orange;
+    border-radius: 20px;
+}
+.input{
+display: flex;
+    flex-direction: column;
+    padding: 15px 15px;
+}
+.input label{
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.input input{
+    border: 1px solid #67e0d7;
+    height: 40px;
+    border-radius: 5px;
+}
+.input input::placeholder{
+    font-size: 18px;
+    text-indent: 10px;
+}
+.multi-input{
+    display: flex;
+}
+.input-1{
+    flex-grow: 1;
+    padding-right: 15px;
+}
+.input-2{
+    padding-right: 15px;
+}
+.input-3{
+    padding-right: 15px;
+}
+.warning{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: 15px;
+}
+.icon-2{
+    font-size: 30px;
+    color: blue;
+}
+.warning .text{
+    font-size: 20px;
+    text-indent: 10px;
+    color: #888888;
+    font-weight: 200;
+}
+
+
+
+
+

@@ -1,0 +1,20 @@
+/* media querry dùng để thay đổi vị trí các element trong trang web giúp cho trang web dễ đọc hơn */
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.item{
+    padding: 50px;
+    text-align: center;
+    background-color: #DDD;
+    border: 1px solid #888;
+}
+/*sử dụng media querry*/
+@media(min-width: 600px){
+    .container{
+        flex-direction: row;
+    }
+    .item{
+        flex-grow: 1;
+    }
+}

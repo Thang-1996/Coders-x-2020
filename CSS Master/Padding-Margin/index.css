@@ -1,0 +1,19 @@
+.list-item{
+    color:red;
+    text-decoration: underline;
+    font-size: 30px;
+    /*muốn padding bên nào thì gõ bên đó là khoảng cách ở bên trong 1 phần tử html cụ thể */
+    /*padding-left: 16px;*/
+    /*padding-top: 20px;*/
+    /*padding-bottom: 20px;*/
+    /*cú pháp rút gọn padding : top right bottom left; theo chiều kim đồng hồ */
+    /*nhiều cách dùng khác : padding : top left-right bottom, top-bottom left-right padding all;*/
+    /*padding : top left-right bottom, trường hợp truyền vào 3 tham số sẽ theo thứ tứ 1: top cuỗi cùng là bottom còn giữa là cả left và right = nhau*/
+    /*padding : top-bottom left-right theo thứ tự 1 sẽ là top = bottom left=right*/
+    /*trường hợp để 1 giá trị thì cả 4 phía sẽ bằng giá trị đó */
+    background-color: aqua;
+    /*cách sử dụng margin là khoảng cách ngoài giữa các phần tử với nhau và phần tử đó với trình duyệt*/
+    /*margin-top: 20px;*/
+    /*margin-left: 20px;*/
+    /*cú pháp sử dụng tương tự với padding*/
+}

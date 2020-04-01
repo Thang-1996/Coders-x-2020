@@ -1,0 +1,11 @@
+.px{
+    font-size: 32px;
+}
+.em{
+    font-size: 2em;
+    /*1em tương ứng với cha hiện tại của div đang được chọn 2em là gấp đôi*/
+}
+.rem{
+    font-size: 2rem;
+    /*rem là 2 lần kích thước của root html */
+}

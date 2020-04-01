@@ -1,0 +1,19 @@
+.list-item{
+    color:red;
+    text-decoration: underline;
+    font-size: 30px;
+    /*// cách sử dụng border*/
+    /*border-width: 1px; chiều rộng của border*/
+    /*border-style: solid; kiểu hiển thị của border có 3 type là solid | dotted | dasher*/
+    /*cú pháp rút gọn border : 1px solid red;*/
+    /*border : 2px solid blue;*/
+    /*trường hợp muốn custom độ rộng hoặc border cụ thể 1 bên nào */
+    /*border-width: top right bottom left;*/
+    /*border-top-width: 5px; //  tăng border cụ thể của 1 góc */
+    /*nếu muốn bỏ border thì để là 0 px*/
+    /*border-width: 5px 0 0 0 ; */
+    /*border-style: solid;*/
+    /*border-color: red;*/
+    /*border : 1px solid red;*/
+    /*border-radius: 5px; độ bo góc của các góc */
+}

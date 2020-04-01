@@ -1,0 +1,12 @@
+.list-item{
+    color:red;
+    text-decoration: underline;
+    font-size: 30px;
+    /*cách tạo các kiểu màu background của css*/
+    /*gán màu cụ thể */
+    /*background-color: aqua;*/
+    /*background-color: transparent; là không có màu gì hết trong suốt và trùng với màu nền  */
+    /*background-color: gradien;*/
+    /*background: linear-gradient(red,blue,green);*/
+    /*có thể dùng trang web css gradient để custom màu cho gradient*/
+}

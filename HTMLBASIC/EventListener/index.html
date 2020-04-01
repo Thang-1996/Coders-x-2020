@@ -1,0 +1,53 @@
+
+<!--method addEventListener-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="new-item" type="text"/>
+<button id="add-btn">Add</button> <!-- on click nhận vào tham số là 1 function -->
+<!--thực tế ít ai gọi hàm trong phần html mà sẽ thêm id và gọi event listener-->
+<ul id="todo-list">
+    <!--        <li>Cooking</li>-->
+    <!--        <li>take a shower</li>-->
+    <!--        <li>goto bed</li>-->
+</ul>
+</body>
+<script type="text/javascript">
+    var todoList = [
+        'Cooking',
+        'take a shower',
+        'gotobed'
+    ];
+    // cách gán thông thường vào 1 hàm vào 1 onlick khi nút được click sẽ chạy hàm
+    var addBtn = document.getElementById('add-btn');
+    // addBtn.onclick = addItem();
+    // cách dùng eventlistener
+    addBtn.addEventListener('click',addItem); // trong ngoặc sẽ truyền vào sự kiện khi nhấn trước dấu . là biến được gọi khi thực hiện sự kiện sẽ được thực hiện sự kiên đó
+    // tham số thứ 2 là hàm thực hiện sự kiện sẽ được chạy khi click
+    // có thể đăng ký nhiều sự kiện cho 1 biến
+    addBtn.addEventListener('click',function () {
+        console.log('Button is clicked');
+    });
+    function render() { // nhóm lại các hàm bằng cú pháp
+        var todo = document.getElementById("todo-list");
+        var content = todoList.map(function (x) {
+            return '<li>'+x+'</li>';
+        });
+        // ghép các element lại bằng phương thức join của arraymethod
+        todo.innerHTML = content.join('');
+    }
+    function addItem() {
+        var input = document.getElementById('new-item');
+        var newItem = input.value; // dùng value để lấy giá trị khi nhập vào trường input
+        todoList.push(newItem);
+        render();
+        // sau khi render sẽ clear input
+        input.value = '';
+    }
+    render();
+</script>
+</html>

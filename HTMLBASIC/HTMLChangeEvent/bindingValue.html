@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="myInput"><br>
+<span>Hello,</span><span id="span"></span>
+
+</body>
+<script type="text/javascript">
+    var input = document.getElementById("myInput");
+    input.addEventListener('input',bindingValue); // event input de lay gia tri du lieu nhap vao
+    function bindingValue() {
+        document.getElementById("span").innerHTML = input.value;
+    }
+</script>
+</html>

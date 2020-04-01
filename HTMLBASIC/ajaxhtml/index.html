@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>To Do List</h1>
+<input id="myInput" type="text" placeholder="New Todo"/> <button id="myButton">Add</button>
+<hr>
+<div id="todo-list">
+
+</div>
+</body>
+<!--thư viện axios dùng để tạo request lấy dữ liệu về -->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script type="text/javascript">
+    // sử dụng axios để request lại dữ liệu về
+    var url = 'http://localhost:9081/todos';
+    axios.get(url).then(function (res) {
+        var items = res.data;
+        console.log('Data loaded',items);
+        render(items);
+    });
+    var button = document.getElementById('myButton');
+    button.addEventListener('click',addTodo);
+    function addTodo() {
+        var input = document.getElementById('myInput');
+        var item = input.value;
+        todo.push(item);
+        render();
+        input.value = '';
+        localStorage.setItem(storageKey, JSON.stringify(todo));
+    }
+    function render(items) {
+        var todolist = document.getElementById('todo-list');
+        var content = items.map(function (x) {
+            return x.content+'<br>';
+        });
+        todolist.innerHTML = content.join('');
+    }
+    // render();
+</script>
+</html>

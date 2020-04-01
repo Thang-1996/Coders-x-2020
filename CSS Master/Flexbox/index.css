@@ -1,0 +1,54 @@
+/*bình thường các div sẽ được sắp xếp theo chiều dọc và có display là block*/
+/*nếu như thay đổi thuộc tính của div lớn là display:flex để bắt đầu sử dụng flexbox thì sẽ phải set flex cho div cha*/
+/*thì 3 div con sẽ bị ép nằm trên 1 hàng vì div cha đang là flex*/
+.container {
+    display: flex;
+    background-color: #DDD;
+    /*flex-direction: row; hướng của flex theo hàng hay cột*/
+    flex-direction: row;
+    color: #FFF;
+    /*justify-content: ; dùng để căn chỉnh vị trí của các element con theo hướng hiện tại là hàng hay cột với giá trị mặc định là flex-start*/
+    /*các thuộc tính khác là */
+    /*justify-content: flex-end; kéo sang phải*/
+    /*justify-content: flex-start; kéo sang trái */
+    /*justify-content: center; hay dùng nhất kéo vào giữa */
+    /*justify-content: space-between; chia đều khoảng cách giữa các element và sẽ không có khoảng cách trái và phải*/
+    /*justify-content: space-around; có khoảng cách cụ thể nhưng sẽ gấp đôi khoảng cách ở đầu và cuối*/
+    /*justify-content: space-evenly; chia đều khoảng cách giữa các element*/
+    /*    justify-content: center;*/
+    /*    height: 250px;*/
+    /*    !*thuộc tính align-items dùng để căn chỉnh các element con theo hướng hiện tại và hướng vuông góc với nó *!*/
+    /*    align-items: center; các thuộc tính cũng giống như justify-content*/
+    /*}*/
+}
+body{
+    margin: 0;
+}
+.child-1{
+    /*chiều rộng sẽ phụ thuộc vào content bên trong*/
+    /*muốn thay đổi chiểu rộng của flex bên trong sẽ dùng flex-basics giá trị mặc định sẽ là auto fix vào content*/
+    background-color: red;
+    flex-basis: 500px;
+    /*sử dụng flex-grow: <number> chỉ có tác dụng khi flex chính còn chỗ trống sử dụng flex-grow sẽ phân bổ khoảng cách trống còn lại cho các phần tử con của flex cha*/
+    /*muốn chia đều cho các phần tử con thì sẽ chuyển giá trị flex-row bằng nhau*/
+    /*flex-grow: 0;*/
+    /*sử dụng flex-shrink giả sử các flex con bên trong mà vượt quá độ rộng của flex cha thì sẽ cắt giảm các flex con để fix vừa flex cha*/
+    /*thuộc tính order được áp dụng cho các flex con và sẽ thay đổi thứ tự hiển thị của các flex con */
+    order: 1;
+}
+.child-2{
+    background-color: green;
+    flex-basis: 500px;
+    /*flex-grow: 1;*/
+    /*flex-grow: 3; chia đều các phần ra theo div cha*/
+    /*flex-grow: 1;*/
+    /*thủ thuật dùng flex-grow nếu muốn 1 thằng con cụ thể chiếm hết phần thừa của div cha thì sẽ set nó bằng 1 và các phần còn lại bằng 0*/
+    order: 2;
+}
+.child-3{
+    background-color: blue;
+    flex-basis: 300px;
+    /*flex-grow: 1;*/
+    /*flex-grow: 0;*/
+    order: 3;
+}

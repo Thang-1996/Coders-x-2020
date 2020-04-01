@@ -1,0 +1,5 @@
+/*Css specificity là độ ưu tiên của quyết định css trong trình duyệt*/
+/**{ * select all*/
+/*    color: red;*/
+/*}*/
+/*khi sử dụng cụ thể 1 tag với * thì tag cụ thể css sẽ được ưu tiên hơn*/

@@ -1,0 +1,53 @@
+/*thuộc tính position gồm : static,relative,fixed,absolute,stick*/
+/*.container{*/
+/*    display: flex;*/
+/*}*/
+/*.box{*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*}*/
+/*.red{*/
+/*    background-color: red;*/
+/*}*/
+/*.green{*/
+/*    background-color: green;*/
+    /*relative là tương đối sẽ thay đổi khi truyền vào thuộc tính làm thay đổi vị trí như top bottom left right*/
+    /*position: relative;*/
+    /*static sẽ là vị trí mặc định đứng nguyên 1 chỗ */
+    /*sẽ dịch chuyển tương ứng kể từ top 1 khoảng tương ứng là 10px và sẽ không làm thay đổi vị trí của các div xung quanh chỉ dịch chuyển content của nó so với vị trí ban đầu của nó*/
+    /*top: 10px;*/
+/*}*/
+/*.blue{*/
+/*    background-color: blue;*/
+/*}*/
+/*.fixed{*/
+/*    !*sử dụng position fixed*!*/
+/*    position: fixed;*/
+/*    !*sẽ di chuyển tương đối theo cửa sổ trình duyệt thường dùng cho các thanh menu dọc hoặc ngang*!*/
+/*    right: 10px;*/
+/*    top: 10px;*/
+/*}*/
+.container{
+    width: 300px;
+    height: 300px;
+    background-color: #DDD;
+    position: relative;
+}
+.inner-container{
+    width: 200px;
+    height: 200px;
+    background-color: #888;
+}
+.child{
+    width: 100px;
+    height: 100px;
+    background-color: #0f517f;
+    position: absolute;
+    bottom: 0;
+    /*nếu muốn căn chỉnh ra giữa */
+    left: 50%;
+    top: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    /*position absolute sẽ thay đổi vị trí element hiện tại và tương đối so với thằng cha đầu tiên có postion là relative*/
+}

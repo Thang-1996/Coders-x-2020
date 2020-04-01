@@ -1,0 +1,47 @@
+.container{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.account{
+    font-family: Arial, sans-serif;
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-weight: normal;
+    border-bottom: 3px dashed black ;
+    margin-bottom: 20px;
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 20px;
+    border: 1px solid #888888;
+    border-radius: 15px;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 10px;
+}
+.img{
+    width: 120px;
+    height: 80px;
+    background-image: url('https://media-exp1.licdn.com/dms/image/C5603AQFP8n5fqtMHRQ/profile-displayphoto-shrink_200_200/0?e=1586995200&v=beta&t=X-ZXalsiovj-BlAM2uwrqovq-BOZ2MK8HCrwQOvCCsw');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    background-color: yellow;
+    flex-grow: 1;
+}
+.text{
+    padding-left: 15px;
+    flex-grow: 1;
+}
+.text .name{
+    font-size: 30px;
+    font-weight: bold;
+}
+.icon{
+    flex-grow: 1;
+    font-size: 35px;
+    color: red;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <p>What is your name?</p>
+    <input type="text" id="myInput" placeholder="Type Your Name"/><button id="submit">Go</button>
+    <p id="p"></p>
+</body>
+<script type="text/javascript">
+    var input = document.getElementById('myInput');
+    var button = document.getElementById('submit');
+    button.addEventListener('click',showText);
+    function showText() {
+        document.getElementById('p').innerHTML = 'Hello,'+input.value;
+    }
+</script>
+</html>

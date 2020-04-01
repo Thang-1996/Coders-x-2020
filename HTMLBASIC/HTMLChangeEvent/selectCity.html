@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectCity</title>
+</head>
+<body>
+<h1>Select City</h1>
+<div id="checkboxGroup">
+    <input type="checkbox" name="city"/> Ha Noi <br>
+    <input type="checkbox" name="city"/> Hai Phong <br>
+    <input type="checkbox" name="city"/> TP HCM <br>
+    <input type="checkbox" name="city"/> Da Nang <br>
+    <input type="checkbox" name="city"/> Ca Mau <br>
+</div>
+<span>You Select </span><span id="span"> 0 </span><span>City</span>
+
+</body>
+
+<script type="text/javascript">
+    var div = document.getElementById('checkboxGroup');
+    var span = document.getElementById('span');
+    div.addEventListener('change', countCheckBox);
+    function countCheckBox() {
+        var checkbox = document.getElementsByName('city');
+        var count = 0;
+        for (var check of checkbox) {
+            if (check.checked === true) {
+                count += 1;
+            }
+        }
+        console.log(count);
+        span.innerHTML = count;
+    }
+</script>
+</html>

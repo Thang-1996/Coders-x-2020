@@ -1,0 +1,33 @@
+/* các cú pháp : Selected :
+a:link style để cho trạng thái khi đường link chưa bao giờ được click
+a:visited style cho trạng thái khi a đã được click rồi
+a:hover style cho trạng thái khi thẻ a được trỏ chuột lên hover
+a:active style khi trỏ chuột và click vào nhưng chưa thả chuột ra
+ */
+/*a:link{*/
+/*    color: green;*/
+/*    text-decoration: none;*/
+/*    font-family: Arial sans-serif;*/
+/*}*/
+/*a:visited{*/
+/*    color: red;*/
+/*}*/
+/*a:hover{*/
+/*    text-decoration: underline;*/
+/*    color: blue;*/
+/*}*/
+/*a:active{*/
+/*    color: yellow;*/
+/*}*/
+/*nên hạn chế đặt selector cho html tag mà phải đặt cho nó 1 class*/
+/*style thẻ a hình nhữ chật*/
+.button-link{
+    background-color: red;
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial sans-serif;
+    padding: 5px 15px;
+}
+.button-link:hover{
+    background-color: black;
+}

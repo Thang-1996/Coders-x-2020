@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Step number</h1>
+    <button id="myButton1">-</button><span id="span"> 0 </span><button id="myButton2">+</button>
+</body>
+<script type="text/javascript">
+    var count = 0 ;
+    var button1 = document.getElementById('myButton1');
+    var button2 = document.getElementById('myButton2');
+    var span = document.getElementById('span');
+    button1.addEventListener('click',reducedNumber);
+    button2.addEventListener('click', increaseNumber);
+    function reducedNumber() {
+        if(count>0){
+            count--;
+        }
+        span.innerHTML = count;
+    }
+    function increaseNumber() {
+        count++;
+        span.innerHTML = count;
+    }
+</script>
+</html>

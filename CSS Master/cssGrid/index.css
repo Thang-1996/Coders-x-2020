@@ -1,0 +1,9 @@
+/* css grid xay dung layout con flex dung de xay dung component*/
+/*đầu tiền phải để wrapper là display: grid*/
+.wrapper{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.header,.footer{
+    grid-column: 1/3;
+}

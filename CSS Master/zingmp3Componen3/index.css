@@ -1,0 +1,23 @@
+.album-square{
+    width: 128px;
+    height: 128px;
+    background-color: #DDD;
+    background-image: url('https://loremflickr.com/320/240');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial sans-serif;
+    color: #fff;
+    font-size: 60px;
+}
+.album-square .overlay{
+    height: 100%;
+    background-color: rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*cách để giấu nút play*/
+    opacity: 0;
+}
+.album-square:hover .overlay{
+    opacity: 1;
+}
